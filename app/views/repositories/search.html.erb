@@ -6,11 +6,11 @@
 <% end %>
 
 <% if @results %>
-<ul>
+
   <% @results.each do |result| %>
-    <li><%= result["name"] %><br>
+    <%= result["name"] %><br>
         <%= link_to result["html_url"], result["html_url"] %><br>
         <%= result["description"] %>
-    </li>
+    
   <% end %>
-</ul>
+
