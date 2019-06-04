@@ -8,8 +8,8 @@
 <% if @results %>
 
   <% @results.each do |result| %>
-    <%= result["name"] %><br>
-        <%= link_to result["html_url"], result["html_url"] %><br>
+    <%= result["name"] %>
+        <%= link_to result["html_url"], result["html_url"] %>
         <%= result["description"] %>
     
   <% end %>
